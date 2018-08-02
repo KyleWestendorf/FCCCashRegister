@@ -131,7 +131,7 @@ function checkCashRegister(price, cash, cid) {
   if(totalAvailable2 == 0) {
     
       console.log({status: "CLOSED", change: closedDrawer});
-      return {status: "CLOSED", change: closedDrawer};
+      return {status: "CLOSED", change: cid};
   } else {
       console.log({status: "OPEN", change: changeDrawer});
       return {status: "OPEN", change: changeDrawer};
